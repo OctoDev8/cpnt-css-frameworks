@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="function.js"></script>
+</head>
+<body>
+    <!-- Just a navbar -->
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="hidden md:flex space-x-4">
+                <a href="http://127.0.0.1:5500/tailwind/index.html" class="text-gray-600 hover:text-blue-500">Home</a>
+                <a href="http://127.0.0.1:5500/tailwind/card.html" target="_blank" class="text-gray-600 hover:text-blue-500">Card</a>
+                </div>
+                </div>
+                </nav>
+    <div class="max-w-md mx-auto">
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <div>
+            <button class="flex justify-between w-full p-4 text-left bg-gray-200 hover:bg-gray-300 focus:outline-none" onclick="toggleAccordion('item1')">
+              <span>Customization</span>
+              <svg class="w-6 h-6 transform rotate-0" id="icon-item1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4M8 15l4 4 4-4" /></svg>
+            </button>
+            <div id="content-item1" class="hidden p-4 bg-gray-100">
+              <p>I can customize more but to be honest, my energy has completely depleted.</p>
+            </div>
+          </div>
+          <div>
+            <button class="flex justify-between w-full p-4 text-left bg-gray-200 hover:bg-gray-300 focus:outline-none" onclick="toggleAccordion('item2')">
+              <span>Energy</span>
+              <svg class="w-6 h-6 transform rotate-0" id="icon-item2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4M8 15l4 4 4-4" /></svg>
+            </button>
+            <div id="content-item2" class="hidden p-4 bg-gray-100">
+              <p>Quite tired, my energy isn't there even tho I want to do more I'm falling asleep.</p>
+            </div>
+          </div>
+        </div>
+      </div>      
+</body>
+</html>
